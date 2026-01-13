@@ -1,10 +1,13 @@
 body {
+    background-color: #F9FAFB;
     font-family: "Figtree";
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    height: 100%;
+    margin: 0;
 }
 
 .container {
@@ -13,6 +16,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    .avatar {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+    }
 }
 
 .box {
@@ -20,11 +30,17 @@ body {
     width: 350px;
     height: 350px;
     background-color: rgb(58, 53, 53);
+    text-align: center;
 }
 
 .box:hover {
     transition: box-shadow 0.2s ease;
     box-shadow: 1em 1em 0px black;
+}
+
+h3 {
+    font-size: 50px;
+    margin-top: 2px;
 }
 
 header {
