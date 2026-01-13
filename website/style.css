@@ -1,5 +1,21 @@
+[data-theme="default"] {
+    --bg-color: #F9FAFB;
+}
+
+[data-theme="wave"] {
+    --bg-color: #76abf0;
+}
+
+[data-theme="forest"] {
+    --bg-color: #45a856;
+}
+
+[data-theme="library"] {
+    --bg-color: #d4ac62;
+}
+
 body {
-    background-color: #F9FAFB;
+    background-color: var(--bg-color);
     font-family: "Figtree";
     display: flex;
     justify-content: center;
@@ -11,7 +27,7 @@ body {
 }
 
 .container {
-    height: 50vh;
+    height: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,18 +45,31 @@ body {
     border-radius: 25px;
     width: 350px;
     height: 350px;
-    background-color: rgb(58, 53, 53);
+    background-color: #3a3535;
     text-align: center;
 }
 
 .box:hover {
     transition: box-shadow 0.2s ease;
     box-shadow: 1em 1em 0px black;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#wave {
+    background-color: #5397f1;
+}
+
+#forest {
+    background-color: #6bdb7d;
+}
+
+#library {
+    background-color: #e7cb96;
 }
 
 h3 {
     font-size: 50px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
 }
 
 header {
