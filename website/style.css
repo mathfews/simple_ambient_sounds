@@ -1,17 +1,25 @@
 [data-theme="default"] {
     --bg-color: #F9FAFB;
+    --title-color: black;
+    --description-color: black;
 }
 
 [data-theme="wave"] {
     --bg-color: #76abf0;
+    --title-color: rgb(19, 77, 236);
+    --description-color: rgb(0, 79, 168);
 }
 
 [data-theme="forest"] {
     --bg-color: #45a856;
+    --title-color: rgb(0, 71, 21);
+    --description-color: rgb(12, 107, 4);
 }
 
 [data-theme="library"] {
     --bg-color: #d4ac62;
+    --title-color: rgb(133, 91, 2);
+    --description-color: rgb(117, 96, 2);
 }
 
 body {
@@ -76,9 +84,11 @@ header {
     display: grid;
     padding-bottom: 50px;
     h1 {
+        color: var(--title-color);
         font-size: 70px;
     }
     h4 {
+        color: var(--description-color);
         font-weight: normal;
         margin-top: -40px;
         font-size: 30px;
