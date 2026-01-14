@@ -57,6 +57,12 @@ body {
     text-align: center;
 }
 
+.selected {
+    transition: box-shadow 0.2s ease;
+    box-shadow: 1em 1em 0px black;
+    border: 2px solid rgb(0, 0, 0);
+}
+
 .box:hover {
     transition: box-shadow 0.2s ease;
     box-shadow: 1em 1em 0px black;
