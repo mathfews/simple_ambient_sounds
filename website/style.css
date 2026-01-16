@@ -2,11 +2,12 @@
     --bg-color: #F9FAFB;
     --title-color: black;
     --description-color: black;
+    --arrow-color: black;
 }
 
 [data-theme="wave"] {
     --bg-color: #76abf0;
-    --title-color: rgb(19, 77, 236);
+    --title-color: #134dec;
     --description-color: rgb(0, 79, 168);
 }
 
@@ -32,10 +33,11 @@ body {
     text-align: center;
     height: 100%;
     margin: 0;
+    transition: background-color 0.5s ease;
 }
 
 .container {
-    height: 45vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,12 +60,6 @@ body {
     text-align: center;
 }
 
-.selected {
-    transition: box-shadow 0.2s ease;
-    box-shadow: 1em 1em 0px black;
-    border: 2px solid rgb(0, 0, 0);
-}
-
 .box:hover {
     transition: box-shadow 0.2s ease;
     box-shadow: 1em 1em 0px black;
@@ -71,20 +67,28 @@ body {
 }
 
 #wave {
-    background-color: #5397f1;
+    background-color: rgb(83, 151, 241);
 }
 
 #forest {
-    background-color: #6bdb7d;
+    background-color: rgb(107, 219, 125);
 }
 
 #library {
-    background-color: #e7cb96;
+    background-color: rgb(231, 203, 150);
+}
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    top: 40px;
 }
 
 h3 {
     font-size: 50px;
-    /* margin-top: 2px; */
+    position: relative;
+    top: 60px;
 }
 
 header {
@@ -99,5 +103,72 @@ header {
         font-weight: normal;
         margin-top: -40px;
         font-size: 30px;
+    }
+}
+
+.boxMobile {
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+/*     body {
+/*         height: 100%; */
+    header {
+        padding: 20px;
+    }
+
+    #wave, #forest, #library {
+        display: none;
+    }
+    .container {
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #boxMobile {
+        position: relative;
+        top: -50px;
+        border-radius: 100%;
+        display: flex;
+        width: 300px;
+        height: 300px;
+        scale: 70%;
+        background-color: rgb(83, 151, 241);
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+    }
+    #boxMobileText {
+        display: flex;
+        position: relative;
+        top: -150px;
+    }
+    .avatarMobile {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        font-size: 7em;
+    }
+    span {
+        color: white;
+        font-weight: bold;
+    }
+    
+    .arrow {
+        font-size: 12em;
+        position: relative;
+        top: 10px;
+        color: var(--title-color);
+    }
+
+    #leftArrow {
+        position: relative;
+        left: -90px;
+    }
+    #rightArrow {
+        position: relative;
+        right: -90px;
     }
 }
